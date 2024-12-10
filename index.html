@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Hotel - Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #002B5B, #00509E);
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3.2rem;
+            margin: 0;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+        nav {
+            background-color: #003366;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+            font-size: 1rem;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+        .hero {
+            background: url('hotel-hero.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+        }
+        .about, .features {
+            margin-bottom: 40px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .about h2, .features h2 {
+            color: #003366;
+            text-align: center;
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+        }
+        .about p, .features ul {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .features ul li {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .features ul li::before {
+            content: "✓";
+            color: #00509E;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        footer {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Truth Hotel</h1>
+        <p>Your luxurious escape in the heart of Clapton Hackney</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="spa.html">Spa & Wellness</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="review.html">Leave us a Review</a></li>
+            <li><a href="Owners.html">Meet The Owners</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h2>Discover Luxury Like Never Before</h2>
+    </div>
+
+    <div class="container">
+        <div class="about">
+            <h2>About Truth Hotel</h2>
+            <p>
+                Nestled in the charming neighborhood of Clapton Hackney, Truth Hotel offers a serene retreat for travelers seeking both comfort and elegance. 
+                With state-of-the-art amenities, exquisite dining, and exceptional service, we aim to create a memorable experience for each guest. Whether you’re 
+                here for business or leisure, Truth Hotel is your home away from home.
+            </p>
+        </div>
+
+        <div class="features">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Prime location in Clapton Hackney</li>
+                <li>Luxurious rooms with modern amenities</li>
+                <li>World-class dining experiences</li>
+                <li>Relaxing spa and wellness facilities</li>
+                <li>Personalized service tailored to your needs</li>
+                <li>Safe and secure environment</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Truth Hotel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

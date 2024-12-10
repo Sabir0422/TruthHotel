@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Hotel - Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #002B5B, #00509E);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            font-weight: 600;
+        }
+        header p {
+            font-size: 1.3rem;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+        nav {
+            background-color: #003366;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+            font-size: 1rem;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #003366;
+            text-align: center;
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+        }
+        form {
+            margin-top: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        .form-group select {
+            cursor: pointer;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            background-color: #003366;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #00509E;
+        }
+        .info-text {
+            font-size: 1rem;
+            text-align: center;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Booking</h1>
+        <p>Plan your stay with ease and luxury.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="spa.html">Spa & Wellness</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="review.html">Leave us a Review</a></li>
+            <li><a href="Owners.html">Meet The Owners</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Book Your Stay</h2>
+        <p class="info-text">
+            Fill in the form below to reserve your room at Truth Hotel. Our team will contact you shortly to confirm your booking.
+        </p>
+        <form action="mailto:hotelbooking@truthhotel.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="checkin">Check-In Date</label>
+                <input type="date" id="checkin" name="checkin" required>
+            </div>
+            <div class="form-group">
+                <label for="checkout">Check-Out Date</label>
+                <input type="date" id="checkout" name="checkout" required>
+            </div>
+            <div class="form-group">
+                <label for="room-type">Room Type</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="">Select a room type</option>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                    <option value="deluxe">Deluxe Room</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="special-requests">Special Requests (Optional)</label>
+                <textarea id="special-requests" name="special-requests" placeholder="Let us know if you have any special requirements."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit Booking</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Truth Hotel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
